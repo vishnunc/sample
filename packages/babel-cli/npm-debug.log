@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'latest' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/vishnu/lerna-repo/babel/packages/babel-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/vishnu/.npm/@babel/cli/7.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/vishnu/.npm correctMkdir not in flight; initializing
+10 info lifecycle @babel/cli@7.0.1~prepublish: @babel/cli@7.0.1
+11 silly lifecycle @babel/cli@7.0.1~prepublish: no script for prepublish, continuing
+12 info lifecycle @babel/cli@7.0.1~prepare: @babel/cli@7.0.1
+13 silly lifecycle @babel/cli@7.0.1~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/vishnu/.npm/@babel/cli/7.0.1/package.tgz',
+14 verbose tar pack   '/Users/vishnu/lerna-repo/babel/packages/babel-cli' ]
+15 verbose tarball /Users/vishnu/.npm/@babel/cli/7.0.1/package.tgz
+16 verbose folder /Users/vishnu/lerna-repo/babel/packages/babel-cli
+17 verbose addLocalTarball adding from inside cache /Users/vishnu/.npm/@babel/cli/7.0.1/package.tgz
+18 verbose correctMkdir /Users/vishnu/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd @babel/cli@7.0.1
+20 verbose afterAdd /Users/vishnu/.npm/@babel/cli/7.0.1/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/vishnu/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/vishnu/.npm/@babel/cli/7.0.1/package/package.json written
+23 silly publish { name: '@babel/cli',
+23 silly publish   version: '7.0.1',
+23 silly publish   description: 'Babel command line.',
+23 silly publish   author: { name: 'Sebastian McKenzie', email: 'sebmck@gmail.com' },
+23 silly publish   homepage: 'https://babeljs.io/',
+23 silly publish   license: 'MIT',
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'https://github.com/babel/babel/tree/master/packages/babel-cli' },
+23 silly publish   keywords:
+23 silly publish    [ '6to5',
+23 silly publish      'babel',
+23 silly publish      'es6',
+23 silly publish      'transpile',
+23 silly publish      'transpiler',
+23 silly publish      'babel-cli',
+23 silly publish      'compiler' ],
+23 silly publish   dependencies:
+23 silly publish    { commander: '^2.8.1',
+23 silly publish      'convert-source-map': '^1.1.0',
+23 silly publish      'fs-readdir-recursive': '^1.0.0',
+23 silly publish      glob: '^7.0.0',
+23 silly publish      lodash: '^4.2.0',
+23 silly publish      'output-file-sync': '^2.0.0',
+23 silly publish      slash: '^1.0.0',
+23 silly publish      'source-map': '^0.5.0',
+23 silly publish      chokidar: '^1.6.1' },
+23 silly publish   optionalDependencies: { chokidar: '^1.6.1' },
+23 silly publish   peerDependencies: { '@babel/core': '^7.0.1' },
+23 silly publish   devDependencies: { '@babel/core': '^7.0.1', '@babel/helper-fixtures': '^7.0.0' },
+23 silly publish   bin:
+23 silly publish    { babel: './bin/babel.js',
+23 silly publish      'babel-external-helpers': './bin/babel-external-helpers.js' },
+23 silly publish   readme: '# @babel/cli\n\n> Babel command line.\n\nIn addition, various entry point scripts live in the top-level package at `@babel/cli/bin`.\n\nThere is a shell-executable utility script, `babel-external-helpers.js`, and the main Babel cli script, `babel.js`.\n\n## Install\n\n```sh\nnpm install --save-dev @babel/core @babel/cli\n```\n\n## Usage\n\n```sh\nbabel script.js\n```\n\nFor more in depth documentation see: http://babeljs.io/docs/usage/cli/\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   _id: '@babel/cli@7.0.1',
+23 silly publish   scripts: {},
+23 silly publish   _shasum: '579a52b12b24a717f5f67c76026b80f35513b403',
+23 silly publish   _from: '.' }
+24 info lifecycle @babel/cli@7.0.1~prepublishOnly: @babel/cli@7.0.1
+25 silly lifecycle @babel/cli@7.0.1~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @babel/cli
+28 silly mapToRegistry scope (from package name) @babel
+29 verbose mapToRegistry no registry URL found in name for scope @babel
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@babel/cli',
+32 silly mapToRegistry   scope: '@babel',
+32 silly mapToRegistry   escapedName: '@babel%2fcli',
+32 silly mapToRegistry   name: '@babel/cli',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fcli
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/vishnu/.npm/@babel/cli/7.0.1/package.tgz
+36 verbose stack Error: auth required for publishing
+36 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+36 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:137:14
+36 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+36 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:108:3)
+36 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+36 verbose stack     at done (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+36 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+36 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+37 verbose cwd /Users/vishnu/lerna-repo/babel/packages/babel-cli
+38 error Darwin 16.7.0
+39 error argv "/usr/local/Cellar/node/7.5.0/bin/node" "/usr/local/bin/npm" "publish" "--tag" "latest"
+40 error node v7.5.0
+41 error npm  v4.1.2
+42 error code ENEEDAUTH
+43 error need auth auth required for publishing
+44 error need auth You need to authorize this machine using `npm adduser`
+45 verbose exit [ 1, true ]
