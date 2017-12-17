@@ -3,7 +3,9 @@ pipeline {
     agent any
     stages{
         stage('sample'){
+            steps{
             print 'hi2'
+            }
         }
     }
 }
