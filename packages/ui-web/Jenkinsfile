@@ -1,11 +1,5 @@
 
 pipeline {
     agent any
-    stages{
-        stage('sample1'){
-            steps{
-            print 'hi2'
-            }
-        }
-    }
+    apply from:'https://raw.githubusercontent.com/vishnunc/pipelines/master/Jenkinsfile?token=0428f12d5cc6aa41706c9327ca8ecba8342ceeb5'
 }
