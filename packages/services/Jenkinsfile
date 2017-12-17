@@ -3,7 +3,7 @@ pipeline {
     agent any
     stages{
         stage('sample'){
-            print 'hi'
+            steps{ print 'hi'}
         }
     }
 }
