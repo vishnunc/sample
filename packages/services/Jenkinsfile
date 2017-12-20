@@ -3,7 +3,10 @@ pipeline {
     agent any
     stages{
         stage('sample'){
-            steps{ print 'hi'}
+            steps{ 
+                def x=load 'packages/services/Jenkinsfile'
+                x.start()
+            }
         }
     }
 }
