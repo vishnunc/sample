@@ -1,9 +1,7 @@
 
-stages{
-        stage('sample'){
+stage('sample'){
             steps{ 
                 print 'hi'
             }
         }
-    }
 
