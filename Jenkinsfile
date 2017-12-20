@@ -5,7 +5,7 @@ node{
   print 'something'
   print 'something else'
   sh 'git whatchanged -n 1'
-  def me =sh (script:'git whatchanged -n 1 --pretty=format: --name-only',returnStdout:true).trim()
+  def me =sh (script:'git whatchanged -n 1 --pretty=format: --name-only',returnStdout:true).trim().split('/')[0]
   print me
   
 }
