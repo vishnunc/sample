@@ -4,5 +4,5 @@ node{
   concurrency : 2
   print 'something'
   print 'something else'
-  git diff
+  sh 'git diff'
 }
