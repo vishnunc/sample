@@ -4,5 +4,5 @@ node{
   concurrency : 2
   print 'something'
   print 'something else'
-  sh 'git diff'
+  sh 'git diff --numstat'
 }
