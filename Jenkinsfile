@@ -1,4 +1,5 @@
 pipeline {
+  concurrent: 2
   agent any
   stages {
     stage('a') {
@@ -10,13 +11,6 @@ pipeline {
         }
       }
     }
-    stage('b'){
-      steps{
-        script{
-          def x=load 'packages/services/Jenkinsfile'
-          x.start()
-        }
-      }
-    }
+   
   }
 }
