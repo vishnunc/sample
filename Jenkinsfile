@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('a') {
       steps {
+        script{
         def x=load 'packages/services/Jenkinsfile'
                 x.start()
+        }
       }
     }
   }
