@@ -1,5 +1,11 @@
 
-node{
-  print 'something'
+pipeline{
+  agent any
+  stages{
+    stage('abc'){
+      steps{
+        print 'hello'
+      }
+    }
+  }
 }
-
