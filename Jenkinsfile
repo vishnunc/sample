@@ -5,6 +5,7 @@ pipeline {
       steps {
         script{
         def x=load 'packages/services/Jenkinsfile'
+          print 'hi'
                 x.start()
         }
       }
