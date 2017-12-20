@@ -4,9 +4,9 @@ pipeline {
     stage('a') {
       steps {
         script{
-        def x=load 'packages/services/Jenkinsfile'
+        //def x=load 'packages/services/Jenkinsfile'
           print 'hi'
-                x.start()
+          //      x.start()
         }
       }
     }
