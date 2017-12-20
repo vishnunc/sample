@@ -1,4 +1,4 @@
 node{
-  currentBuild.displayName = "fooName"
+  currentBuild.displayName = "UI-"+currentBuild.displayName
   concurrency : 2
 }
