@@ -5,4 +5,5 @@ node{
   print 'something'
   print 'something else'
   sh 'git whatchanged -n 1'
+  sh 'git diff-tree'
 }
