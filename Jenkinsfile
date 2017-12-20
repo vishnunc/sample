@@ -1,5 +1,5 @@
 pipeline {
-  concurrent: 2
+  currentBuild.displayName = "fooName"
   agent any
   stages {
     stage('a') {
