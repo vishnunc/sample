@@ -4,8 +4,7 @@ pipeline {
     stages{
         stage('sample'){
             steps{ 
-                def x=load 'packages/services/Jenkinsfile'
-                x.start()
+                print 'hi'
             }
         }
     }
