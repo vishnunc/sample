@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('abc'){
       steps{
-        print 'hello1'
+        print 'hellddo1'
       }
     }
   }
