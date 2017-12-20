@@ -5,6 +5,7 @@ node{
   print 'something'
   print 'something else'
   sh 'git whatchanged -n 1'
-  sh 'git whatchanged -n 1 --pretty=format: --name-only'
-  sh 'git diff-tree --name-only HEAD^ HEAD'
+  def me =sh 'git whatchanged -n 1 --pretty=format: --name-only'
+  print me
+  
 }
